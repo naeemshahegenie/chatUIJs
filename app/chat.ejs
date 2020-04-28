@@ -1,0 +1,59 @@
+<%- include('partials/header') -%>
+
+<div class="container-fluid ">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="App">
+                <!-- <div class="overlay">
+                    <h1>Loading</h1>
+                </div> -->
+                <header class="app-header">
+                    <nav class="navbar navbar-expand-md">
+                        <h4>Hello <%= user.username %> </h4>
+                    </nav>
+                </header>
+
+                <main role="main" class="container-fluid content">
+                    <div class="row chat-content">
+                        <div class="col-3 chat-list-container">
+                            <ul class="user-list" id="js-chat-list-container"></ul>
+                        </div>
+                        <div class="col-8 message-container">
+                            <div class="message-overlay" id="no-user-selected">
+                                <h3>Select a User to chat.</h3>
+                            </div>
+                            <div id="user-selected" style="display:none;">
+                                <div class="message-container" id='chat-with-me'>
+                                    <!-- <div class="opposite-user" id="chat-box-title">
+                                        Chatting with
+                                    </div>
+                                    <div class="message-thread start-chatting-banner" id="chat-not-available">
+                                        <p className="heading">
+                                            You haven 't chatted with in a while,
+                                            <span className="sub-heading"> Say Hi.</span>
+                                        </p>
+                                    </div>
+
+                                    <div className="message-thread" id="chat-available">
+                                        <ul class="message-thread" id="insert-chat">
+                                        </ul>
+                                    </div> -->
+                                </div>
+
+                                <div class="message-typer">
+                                    <form>
+                                        <textarea id="send-message" class="message form-control" placeholder="Type and hit Enter">
+                                        </textarea>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<%- include('partials/footer') -%>
